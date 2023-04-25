@@ -1,0 +1,34 @@
+﻿<Window x:Class="TailorMadeTour.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:views="clr-namespace:TailorMadeTour.UserControls"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TailorMadeTour"
+        mc:Ignorable="d"
+        Title="MainWindow"
+        Height="600"
+        Width="800"
+        WindowStartupLocation="CenterScreen"
+        WindowState="Maximized"
+        FontSize="16">
+    <StackPanel>
+        <TextBlock 
+            
+            
+            
+            FontSize="20"
+                    FontFamily="Britannic Bold">Tailor-made Tours - Chicago</TextBlock>
+        <TabControl MinHeight="400">
+            <TabItem Header="Tour Stops">
+                <views:TourStopsView />
+            </TabItem>
+            <TabItem Header="Details">
+                <views:DetailView />
+            </TabItem>
+            <TabItem Header="Weekly Calender">
+                <views:ScheduleView></views:ScheduleView>
+            </TabItem>
+        </TabControl>
+    </StackPanel>
+</Window>
